@@ -162,7 +162,7 @@ http://www.templatemo.com/tm-507-victory
                 <div class="col-md-4 col-sm-12">
                     <div class="right-info">
                         <h4>Reservation</h4>
-                        <form id="form-submit" action="https://formspree.io/f/xwkwwdwg" method="POST">
+                        <form id="form-submit">
                             <div class="row">
                                 <div class="col-md-6">
                                     <fieldset>
@@ -217,12 +217,11 @@ http://www.templatemo.com/tm-507-victory
                                 </div>
                                 <div class="col-md-6">
                                     <fieldset>
-                                        <button type="submit" id="form-submit" class="btn" value="Send">Book Table</button>
+                                        <button  id="form-submit" class="btn" onclick="sendContactInfoToFormSpree()">Book Table</button>
                                     </fieldset>
                                 </div>
                             </div>
                         </form>
-                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                     </div>
                 </div>
             </div>
@@ -466,6 +465,7 @@ http://www.templatemo.com/tm-507-victory
 
 
     function sendContactInfoToFormSpree(){
+    	event.preventDefault();
     	$.ajax({
 		  url: "https://formspree.io/f/xwkwwdwg",
 		  method: "POST",
