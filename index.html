@@ -465,7 +465,6 @@ http://www.templatemo.com/tm-507-victory
 
 
     function sendContactInfoToFormSpree(){
-    	event.preventDefault();
     	$.ajax({
 		  url: "https://formspree.io/f/xwkwwdwg",
 		  method: "POST",
@@ -480,6 +479,7 @@ http://www.templatemo.com/tm-507-victory
 			diaDeChegada: getElementById("day").value;
 		  }
 		});
+		return false;
     }
     </script>
 </body>
