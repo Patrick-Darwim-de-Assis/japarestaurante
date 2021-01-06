@@ -449,6 +449,7 @@ http://www.templatemo.com/tm-507-victory
 
         //função para enviar o formulário para o e-mail do restaurante
         $('#submit').click(function(){
+        	alert("Passei por aqui");
 	    	$.ajax({
 			  url: "https://formspree.io/f/xwkwwdwg",
 			  method: "POST",
@@ -461,9 +462,6 @@ http://www.templatemo.com/tm-507-victory
 				nomeDaPessoa: getElementById("name").value;
 				horaDeChegada: getElementById("hour").value;
 				diaDeChegada: getElementById("day").value;
-			  },
-			  success: function(){
-			  	return false;
 			  }
 			});       	  
         });
