@@ -163,7 +163,7 @@ http://www.templatemo.com/tm-507-victory
                     <div class="right-info">
                         <h4>Reservation</h4>
                         <!--<form id="form-submit" onsubmit="sendContactInfoToFormSpree()">>-->
-                        <form id="form-submit">
+                        <form id="form-submit" method="POST" data-netlify="true" >
                             <div class="row">
                                 <div class="col-md-6">
                                     <fieldset>
@@ -448,7 +448,7 @@ http://www.templatemo.com/tm-507-victory
         });
 
         //função para enviar o formulário para o e-mail do restaurante
-        $('#submit').click(function(){
+       /* $('#submit').click(function(){
         	alert("Passei por aqui");
 	    	$.ajax({
 			  url: "https://formspree.io/f/xwkwwdwg",
@@ -464,7 +464,7 @@ http://www.templatemo.com/tm-507-victory
 				diaDeChegada: getElementById("day").value;
 			  }
 			});       	  
-        });
+        });*/
     });
     // scroll function
     function scrollToID(id, speed){
