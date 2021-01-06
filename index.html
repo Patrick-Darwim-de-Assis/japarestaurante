@@ -162,7 +162,8 @@ http://www.templatemo.com/tm-507-victory
                 <div class="col-md-4 col-sm-12">
                     <div class="right-info">
                         <h4>Reservation</h4>
-                        <form id="form-submit" onsubmit="sendContactInfoToFormSpree()">
+                        <!--<form id="form-submit" onsubmit="sendContactInfoToFormSpree()">>-->
+                        <form id="form-submit">
                             <div class="row">
                                 <div class="col-md-6">
                                     <fieldset>
@@ -444,6 +445,27 @@ http://www.templatemo.com/tm-507-victory
         $('#nav-toggle').on('click', function (event) {
             event.preventDefault();
             $('#main-nav').toggleClass("open");
+        });
+
+        //função para enviar o formulário para o e-mail do restaurante
+        $('#submit').click(function(){
+	    	$.ajax({
+			  url: "https://formspree.io/f/xwkwwdwg",
+			  method: "POST",
+			  dataType: "json",
+			  data: {
+			    //email: "a.visitor@email.com",
+			    //message: "Hello!"
+			    quantidadeDePessoas: getElementById("persons").value;
+				numeroDeTelefone: getElementById("phone").value;
+				nomeDaPessoa: getElementById("name").value;
+				horaDeChegada: getElementById("hour").value;
+				diaDeChegada: getElementById("day").value;
+			  },
+			  success: function(){
+			  	return false;
+			  }
+			});       	  
         });
     });
     // scroll function
