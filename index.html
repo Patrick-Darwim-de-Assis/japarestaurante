@@ -163,7 +163,7 @@ http://www.templatemo.com/tm-507-victory
                     <div class="right-info">
                         <h4>Reservation</h4>
                         <!--<form id="form-submit" onsubmit="sendContactInfoToFormSpree()">>-->
-                        <form id="form-submit" method="POST" data-netlify="true" >
+                        <form id="form-submit" method="POST" >
                             <div class="row">
                                 <div class="col-md-6">
                                     <fieldset>
@@ -218,7 +218,7 @@ http://www.templatemo.com/tm-507-victory
                                 </div>
                                 <div class="col-md-6">
                                     <fieldset>
-                                        <button  id="form-submit" type="submit" class="btn" >Book Table</button>
+                                        <button  id="form-submit" type="submit" class="btn" onclick="sendContactInfoToFormSpree()">Book Table</button>
                                     </fieldset>
                                 </div>
                             </div>
@@ -487,7 +487,7 @@ http://www.templatemo.com/tm-507-victory
     function sendContactInfoToFormSpree(){
     	$.ajax({
 		  url: "https://formspree.io/f/xwkwwdwg",
-		  method: "POST",
+		  type: "POST",
 		  dataType: "json",
 		  data: {
 		    //email: "a.visitor@email.com",
@@ -497,9 +497,11 @@ http://www.templatemo.com/tm-507-victory
 			nomeDaPessoa: getElementById("name").value;
 			horaDeChegada: getElementById("hour").value;
 			diaDeChegada: getElementById("day").value;
+			success: function(){
+            	alert("worked");
+        	}
 		  }
 		});
-		return false;
     }
     </script>
 </body>
