@@ -1,0 +1,758 @@
+/*######################### GENERAL CONFIGURATIONS - GENERAL CONFIGURATIONS - GENERAL CONFIGURATIONS - GENERAL CONFIGURATIONS ###############################################################################*/
+
+
+body, html{
+    margin:0;
+    padding:0;
+    width:100%;
+    font-family: 'Vollkorn', serif;
+    
+}
+body{
+	//background-color: #f7c7c7;
+	background-color: ;
+
+}
+
+
+img{
+    padding:0;
+    margin:0;
+}
+
+   
+#wrapper{
+		
+}
+
+#preload{
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/*################################### HEADER - HEADER - HEADER - HEADER - HEADER ###############################################################################*/
+header {
+    //background: #ee974f;
+    //background: rgb(136, 186, 175);
+    //background-image: url(../textures/textures-1182829_horizontal_claridade.jpg);
+    //background: url(../textures/background_hfg_quadriculado.svg);
+    //background: url(../textures/background_with_black_dots_HFG.png);
+    //background-image: url(../textures/diagonal_strapes.png);
+    //background-image: url(../textures/grunge-1387126_long.jpg);
+    
+    //background-image: url(../textures/background_with_black_dots_HFG.png);
+    
+    //background-image: url(../textures/earthy-1522896_long.jpg);
+    
+    //background: rgb(82, 191, 222); /* For browsers that do not support gradients */
+    //background: -webkit-linear-gradient(white, rgb(82, 191, 222)); /* For Safari 5.1 to 6.0 */
+    //background: -o-linear-gradient(white, rgb(82, 191, 222)); /* For Opera 11.1 to 12.0 */
+    //background: -moz-linear-gradient(white, rgb(82, 191, 222)); /* For Firefox 3.6 to 15 */
+    //background: linear-gradient(white, rgb(82, 191, 222)); /* Standard syntax */
+    
+     /*Applying shadow effect*/
+   
+   
+   /*
+   background: rgb(0, 0, 0); 
+   background: rgba(0, 0, 0, 0.7);
+   color: #fff2e6;
+    */
+    
+    /* mixing images*/
+    //background-image: url(../textures/grunge-1387126_long.jpg); /* For browsers that do not support gradients */
+    //background: -webkit-linear-gradient(url(../textures/grunge-1387126_long.jpg), rgb(82, 191, 222)); /* For Safari 5.1 to 6.0 */
+    //background: -o-linear-gradient(url(../textures/grunge-1387126_long.jpg), rgb(82, 191, 222)); /* For Opera 11.1 to 12.0 */
+    //background: -moz-linear-gradient(url(../textures/grunge-1387126_long.jpg), rgb(82, 191, 222)); /* For Firefox 3.6 to 15 */
+    //background: linear-gradient(url(../textures/grunge-1387126_long.jpg), rgb(82, 191, 222)); /* Standard syntax */
+    //background-image: url(../textures/grunge-1387126_long.jpg), rgb(82, 191, 222);
+    background: white;
+    background-size: 100%;
+    
+    //background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+    
+    /*applying shadow after header at the bottom*/
+     box-shadow: inset  0 -8px 8px -8px black;
+     -moz-box-shadow: inset 0 -8px 8px -8px black;
+     -webkit-box-shadow: inset 0 -8px 8px -8px black;
+}
+
+
+/*applying opacity to header*/
+body.scrolled header{
+	opacity: 0.2;
+	transition: opacity 1.5s;
+	-webkit-transition: opacity 1.5s;
+	-moz-transition: opacity 1.5s;
+	-o-transition: opacity 1.5s;
+}
+
+body.scrolled header:hover{
+	opacity: 1.0;
+	transition: opacity 1.5s;
+	-webkit-transition: opacity 1.5s;
+	-moz-transition: opacity 1.5s;
+	-o-transition: opacity 1.5s;
+}
+
+
+body.scrolledBack header{
+	opacity: 1.0;
+	transition: opacity 1.5s;
+	-webkit-transition: opacity 1.5s;
+	-moz-transition: opacity 1.5s;
+	-o-transition: opacity 1.5s;
+}
+
+body.scrolledBackFaster header{
+	opacity: 1.0;
+	transition: none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+}
+
+
+	
+#freiGalvaoIcon
+    {
+    width:25%;
+    height: 125px;
+    position: absolute;
+    top: 10px;
+    
+    }
+
+    
+.tituloEmpresa{
+    top:25px;
+    width: 50%;
+    font-size: 4em;
+    left:25%;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    
+}
+
+.menu{
+    position: absolute;
+    left:75%;
+    height: 150px;
+    top: 50px;
+    width: 25%;
+    
+}
+
+/*
+.contateNos, .FotosEQuartos{
+    float: right;
+    margin-right: 25px;
+    margin-top: 25px;
+    font-family: 'Vollkorn', serif;
+    position: relative;
+}*/
+        
+ a:visited.FotosEQuartos, a:visited.contateNos, a:link.FotosEQuartos, a:link.contateNos {
+	color: black;
+	float: right;
+	/*margin-right: 25px;*/
+	/*margin-top: 25px;*/
+	font-family: 'Vollkorn', serif;
+	position: relative;
+	font-size: 1.2em;
+	//border: solid black;
+	padding: 8px;
+	height: 150px;
+	
+}
+
+
+
+/*################################### CONTENT - CONTENT CONTENT - CONTENT CONTENT - CONTENT ###############################################################################*/
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+    margin:0;
+    top: 75px;
+    min-height:850px;
+}
+
+.preload{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#slide-1 .bcg {background-image:url('../img/Hotel Frei Galvão (14) FACE.JPG')}
+
+
+
+.containerBanner{/*excluded class*/
+    position: relative;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    top: 75px;
+}
+
+#banner {
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    top: 75px;
+    min-height:850px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/Hotel Frei Galvão (14) FACE.JPG');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/*TO DO: find a way to stretch the images with probably another attribute such as height and width for the background-image.*/
+#bannerTeste{
+	background-image: url("../img/hfg_pt1.jpg") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 750px;
+	position: relative;
+	padding: 0;
+	margin:0;
+	top: 75px;
+	//background: transparent;
+}
+
+
+/*
+#bannerTeste{
+	background-image: url(../hotel_frei_galvao_fachada.jpg) ;
+	background-repeat : no-repeat;
+	position : relative ;
+	left : 120px;
+	top : 0px;
+	width : 110px;
+	height : 145px;
+}*/
+
+/*selecting each image in contentGrid*/
+/*#contentGrid div div{
+
+	 min-height: 350px;
+}*/
+
+
+
+
+#aboutUs{
+    left:10%;
+    width:80%;
+    display: inline-block;
+    font-size: 2.7em;
+    position: absolute; 
+    top:35%;
+    text-align: center;
+    display: none;
+    /*Applying shadow effect*/
+   
+   font: bold;
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); 
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+   border-radius: 1em;
+   color: #fff2e6;
+}
+
+#TituloGridImagens{
+	text-align:center;
+	
+	width: 100%;
+	font-size: 3em;
+	position: relative;
+	top:225px;
+	
+	 /*Applying shadow effect*/
+   
+  
+}
+
+
+#scrollGridAnchor{
+	width:100%;
+}
+
+#contentGrid {
+    position:relative;
+    top: 250px;      
+    width: 100%;         
+}
+
+#contentGrid div img{
+	border-radius: 1em;
+}
+
+
+.column{
+    padding:0.5%;
+}
+
+div > div > img{
+	margin: 0px;
+}
+
+
+
+/*################################### FOOTER - FOOTER  FOOTER - FOOTER  FOOTER - FOOTER ###############################################################################*/
+
+footer {
+	font-size: 1.5em;
+    /*background: #E0B490;*/
+    //background: rgb(239, 157, 79);
+    //background-image: url(../textures/textures-1182829_horizontal_claridade.jpg);
+    
+    //background: #3a3a3a;
+    //color: #fff;
+   
+   /*TODO: alter resolution of the image to fit perfectly at the background of the footer*/
+    //background-image: url(../textures/grunge-1387126.jpg);
+    //background-image: url(../textures/backgroundImage_Bege.png); 
+    
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    /*TODO: alter quality of background */
+    position: relative;
+    text-align: center;
+    top: 250px;
+    width: 100%;
+    height: 400px;
+    
+    /*shadow above*/
+    //box-shadow: inset 0 18px 20px -7px white;
+   // -webkit-box-shadow: inset 0 18px 20px -7px white;
+   // -moz-box-shadow: inset 0 18px 20px -7px white;
+   
+    box-shadow:        inset  0  16px 16px -8px white, 
+                        inset  0 -16px 16px -8px white;
+   }
+
+.footerContent{
+/*TODO: correct the alignment to center*/
+	padding: 100px 0;
+	height: 100%;
+}
+   
+
+#rodape{
+	//top:10px;
+	position:relative;
+}
+
+
+#facebookIcon/*transformar em ID!!!!!!!!!!!!!! facebook icon*/
+    {
+    width:70px;
+    height: 70px;
+   // top:30px;
+	position:relative;
+    }
+    
+
+#DesenvolvidoPor{
+	//color: white;
+	//background: black;	
+	
+	
+	/*shadow above*/
+   // box-shadow: inset 0 7px 35px -7px rgb(215, 103, 17);
+    //-webkit-box-shadow: inset 0 18px 20px -7px rgb(215, 103, 17);
+    //-moz-box-shadow: inset 0 18px 20px -7px rgb(215, 103, 17);
+	
+	//background: #3a3a3a;
+        //color: #fff;
+	
+	background: white;
+	color: black;
+	
+	position: relative;
+	height: 60px;
+	top:250px;
+}
+
+#DesenvolvidoPor>span, footer>p{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%); /* IE 9 */
+	-webkit-transform: translate(-50%, -50%); /* Safari */
+	-moz-transform: translate(-50%, -50%); /* Mozilla */
+	-o-transform: translate(-50%, -50%); /* Opera */
+	text-align: center;
+}
+
+
+/*---------------MEDIA QUERIES------------------------------MEDIA QUERIES------------------------------MEDIA QUERIES------------------------------MEDIA QUERIES---------------*/
+
+    
+@media screen and (max-width: 1200px){
+	
+	#facebookIcon{
+		width: 22.5%;
+	}
+	
+	.tituloEmpresa{
+		width:47.5%;
+		left: 22.5%;
+	}
+	.menu{
+		left:70%;
+		width: 30%;
+	}
+}
+
+
+
+@media screen and (max-width: 1060px){
+	#aboutUs{
+		font-size: 2.6em;
+	}
+}
+
+@media screen and (max-width: 1022px){
+	#aboutUs{
+		font-size: 2.5em;
+	}
+}
+
+@media screen and (max-width: 983px){
+	#aboutUs{
+		font-size: 2.4em;
+	}
+}
+
+@media screen and (max-width: 945px){
+	#aboutUs{
+		font-size: 2.3em;
+	}
+}
+
+@media screen and (max-width: 907px){
+	#aboutUs{
+		font-size: 2.2em;
+	}
+}
+
+@media screen and (max-width: 869px){
+	#aboutUs{
+		font-size: 2.1em;
+	}
+}
+
+@media screen and (max-width: 831px){
+	#aboutUs{
+		font-size: 2.05em;
+	}
+}
+
+@media screen and (max-width: 793px){
+	#aboutUs{
+		font-size: 2.0em;
+	}
+}
+
+@media screen and (max-width: 755px){
+	#aboutUs{
+		font-size: 1.95em;
+	}
+}
+
+@media screen and (max-width: 717px){
+	#aboutUs{
+		font-size: 1.90em;
+	}
+}
+
+@media screen and (max-width: 679px){
+	#aboutUs{
+		font-size: 1.85em;
+	}
+}
+
+@media screen and (max-width: 641px){
+	#aboutUs{
+		left:9%;
+		width:82%;
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 603px){
+	#aboutUs{
+		left:8%;
+		width:84%;
+		font-size: 1.75em;
+	}
+}
+
+@media screen and (max-width: 565px){
+	#aboutUs{
+		left:7%;
+		width:86%;
+		font-size: 1.7em;
+	}
+}
+
+@media screen and (max-width: 527px){
+	#aboutUs{
+		font-size: 1.65em;
+		left;
+		width:80%;
+	}
+}
+
+@media screen and (max-width: 489px){
+	#aboutUs{
+		font-size: 1.6em;
+	}
+}
+
+@media screen and (max-width: 451px){
+	#aboutUs{
+		font-size: 1.55em;
+	}
+}
+
+@media screen and (max-width: 413px){
+	#aboutUs{
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 375px){
+	#aboutUs{
+		font-size: 1.45em;
+	}
+}
+
+@media screen and (max-width: 337px){
+	#aboutUs{
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (max-width: 960px){
+    .tituloEmpresa{
+        font-size: 2.75em;
+        width: 42.5%;
+    }
+    .menu{
+        width: 30%;
+        left: 65%;
+    }
+    
+    a:visited.FotosEQuartos, a:visited.contateNos, a:link.FotosEQuartos, a:link.contateNos {
+	font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 900px){
+	.tituloEmpresa{
+		font-size: 2.6em;
+			left: 20%;
+	}
+	#facebookIcon{
+		width: 20%;
+	}
+	.menu{
+		left:67.5%;
+		width:32.5%;
+	}
+	a:visited.FotosEQuartos, a:visited.contateNos, a:link.FotosEQuartos, a:link.contateNos {
+	font-size: 1.05em;
+    }
+}
+
+
+
+@media screen and (max-width: 810px){
+    header{
+        position:relative; 
+        height:100px;
+    }
+
+    #banner{
+        top:0px;
+    }
+
+    #contentGrid{
+        top:10px;
+    }
+
+    footer{
+        top: 25px;
+    }
+
+    a:visited.FotosEQuartos, a:visited.contateNos, a:link.FotosEQuartos, a:link.contateNos {
+       
+       margin:0px;
+       text-align: center;
+    }
+
+    .contateNos{
+        width:50%;
+    }
+
+    .FotosEQuartos{
+        width:50%;
+    }
+
+    .menu{
+        width: 100%;
+        height: 25px;
+        position: relative;
+        top:75px;
+        left:0;
+    }
+
+
+    #freiGalvaoIcon{
+        width:50%;
+        margin: 0;
+        
+    }
+    .tituloEmpresa{
+        width:50%;
+        margin:0;
+        left:50%
+    }
+            
+}
+
+@media screen and (max-width: 690px){
+	footer{
+		height: 160px
+	}
+}
+
+
+@media screen and (max-width: 680px){
+    .tituloEmpresa{
+        
+	left:47.5%;
+	width:52.5%;
+    }
+    #freiGalvaoIcon{
+	width:47.5%;
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+	footer{
+		height: 250px
+	}
+	.tituloEmpresa{
+		font-size: 2.5em;
+	}
+}
+
+
+
+@media screen and (max-width: 610px){
+    .tituloEmpresa{
+	top: 5px;
+        font-size: 2.3em;
+	left:46.5%;
+	width:53.5%;
+    }
+    #freiGalvaoIcon{
+	width:46.5%;
+    }
+}
+
+@media screen and (max-width: 550px){
+   
+    .tituloEmpresa{
+        font-size: 2.2em;
+	left:44.5%;
+	width:55.5%;
+	top:7px;
+    }
+    #freiGalvaoIcon{
+	width:44.5%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tituloEmpresa{
+	left:42.5%;
+	width:57.5%;
+	font-size: 2em;
+	top:10px;
+    }
+    #freiGalvaoIcon{
+	width:42.5%;
+    }
+}
+        
+@media screen and (max-width: 440px){
+    .tituloEmpresa{
+	left:39%;
+	width:61%;
+	font-size: 1.8em;
+	top:15px;
+    }
+    #freiGalvaoIcon{
+	width:39%;
+    }
+}
+        
+@media screen and (max-width: 390px){
+    .tituloEmpresa{
+	left:31%;
+	width:69%;
+	font-size: 1.7em;
+	top:20px;
+    }
+    #freiGalvaoIcon{
+	width:31%;
+    }
+}
+        
+

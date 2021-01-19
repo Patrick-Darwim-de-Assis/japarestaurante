@@ -6,13 +6,31 @@
 # $ php -f db-connect-test.php
 
 
-$dbhost = 'u893384050.japarestauranteaparecida.cf@hotelfreigalvao.com.br';
+$dbhost = 'localhost:8001';
 $dbname = 'u893384050_jpRestPatrick';
-$dbpass = 'A4ZAzR/~Ce^KDfy-42k%fR?-4PfZ)LxR';
-$dbname = 'u893384050_jpRestAparecid';
+$dbpass = 'admin';
+$dbname = 'admin';
+?>
 
-$connect = mysql_connect($dbhost, $dbuser, $dbpass) or die("Unable to Connect to '$dbhost'");
-mysql_select_db($dbname) or die("Could not open the db '$dbname'");
+<script type="text/javascript">
+  alert('Deus te ama muito');
+</script>
+
+<?php
+$connect = mysql_connect($dbhost, $dbuser, $dbpass, $dbname) or die("Unable to Connect to '$dbhost'");
+
+?>
+<?php
+
+//mysql_select_db($dbname) or die("Could not open the db '$dbname'");
+
+// Check connection
+if (!$connect) {
+    die("Connection failed: " . mysql_connect_error());
+}
+echo "Connected successfully";
+mysql_close($connect);
+
 
 $test_query = "SHOW TABLES FROM $dbname";
 $result = mysql_query($test_query);
@@ -48,16 +66,12 @@ ExtendedAddslash($_POST);
 		$nomeDaPessoa = $_POST['name'];
 		$horaDeChegada = $_POST['hour'];
 		$diaDeChegada = $_POST['day'];
-		?>
 
 
-		<?php
-		$db_host = 'u893384050.japarestauranteaparecida.cf@hotelfreigalvao.com.br';
-		$db_username = 'u893384050_jpRestPatrick';
-		$db_password = 'A4ZAzR/~Ce^KDfy-42k%fR?-4PfZ)LxR';
-		$db_name = 'u893384050_jpRestAparecid';
-		mysql_connect( $db_host, $db_username, $db_password) or die(mysql_error());
-		mysql_select_db($db_name);
+
+		
+		//mysql_connect( $db_host, $db_username, $db_password) or die(mysql_error());
+		//mysql_select_db($db_name);
 
 
 
@@ -71,8 +85,4 @@ ExtendedAddslash($_POST);
     mysql_query(
     		"INSERT INTO `rsv_reservarMesa` (`rsv_DiaDaSemana`, `rsv_Hora`, `rsv_NomeCompleto`, `rsv_Telefone`, `rsv_QuantidadeDePessoas`) VALUES ('$diaDeChegada', '$horaDeChegada', '$nomeDaPessoa', '$numeroDeTelefone', '$QuantidadeDePessoas') "
     	) or die(mysql_error());
-
 ?>
-
-
-
